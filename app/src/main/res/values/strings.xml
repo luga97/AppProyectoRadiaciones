@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CarlosApp</string>
+    <string name="integrantes">
+        Carlos Enrique Cordova \n
+        Aschly Rodríguez\n
+        Manuel de Abreu\n
+        Pedro Palacios\n
+        Sebastian Calderón
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

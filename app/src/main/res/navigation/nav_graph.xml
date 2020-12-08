@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstScreen">
+
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="com.example.carlosapp.FirstScreen"
+        android:label="Pantalla Principal"
+        tools:layout="@layout/fragment_first_screen" >
+        <action
+            android:id="@+id/action_firstScreen_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.carlosapp.SecondFragment"
+        android:label="Menu de Opciones"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_puntualesFragment"
+            app:destination="@id/puntualesFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_hilosFragment"
+            app:destination="@id/hilosFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_coaxialFragment"
+            app:destination="@id/coaxialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/puntualesFragment"
+        android:name="com.example.carlosapp.puntualesFragment"
+        android:label="Puntuales"
+        tools:layout="@layout/fragment_puntuales" />
+    <fragment
+        android:id="@+id/coaxialFragment"
+        android:name="com.example.carlosapp.coaxialFragment"
+        android:label="Coaxial"
+        tools:layout="@layout/fragment_coaxial" />
+    <fragment
+        android:id="@+id/hilosFragment"
+        android:name="com.example.carlosapp.hilosFragment"
+        android:label="Hilos"
+        tools:layout="@layout/fragment_hilos" />
+</navigation>
